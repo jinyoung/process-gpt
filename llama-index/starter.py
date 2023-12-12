@@ -9,18 +9,18 @@ from llama_index import (
 from pathlib import Path
 from llama_index import download_loader
 
-# reader = download_loader("PptxReader")
-reader = download_loader("PDFReader")
+reader = download_loader("PptxReader")
+#reader = download_loader("PDFReader")
 
 
-loader = PptxReader()
+loader = reader()
 
 # check if storage already exists
 if not os.path.exists("./storage"):
     # load the documents and create the index
     #documents = SimpleDirectoryReader("data").load_data()
-    #documents = loader.load_data(file=Path('./data/ppt.pptx'))
-    documents = loader.load_data(file=Path('./data/pdf.pdf'))
+    documents = loader.load_data(file=Path('./data/ppt.pptx'))
+    #documents = loader.load_data(file=Path('./data/pdf.pdf'))
 
     index = VectorStoreIndex.from_documents(documents)
     # store it for later

@@ -4,8 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+llama-index = "*"
+python-pptx = "*"
+transformers = "*"
+pillow = "*"
+pip = "*"
+install = "*"
+setuptools = "*"
+torchvision = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.12"
+python_version = "3.10"

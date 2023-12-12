@@ -5,3 +5,7 @@ pip install Pillow
 pip install torch
 pip install torchvision
 python starter.py
+
+
+
+

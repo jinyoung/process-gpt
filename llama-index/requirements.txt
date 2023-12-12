@@ -1,1 +1,6 @@
 llama-index
+python-pptx
+transformers
+Pillow
+torch
+torchvision
